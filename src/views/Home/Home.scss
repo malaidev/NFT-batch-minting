@@ -1,0 +1,394 @@
+.home{
+  background-image: url("../../assets/bg.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container{
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+    .countdownWrapper{
+      color: #FEBF33;
+      text-align: center;
+      font-size: 16px;
+      .Countdown{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Countdown-col{
+          display: flex;
+          flex-direction: row;
+          color: #FEBF33;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+        }
+        .Countdown-col-element{
+          color: #FEBF33;
+          font-size: 30px;
+        }
+      }
+
+    }
+
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0 0 0;
+    .walletWrapper{
+      user-select: none;
+      width: 200px;
+      color: #E58F0E;
+      font-size: 16px;
+      padding: 5px 30px;
+      border: 1px solid #E58F0E;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: bold;
+      &:hover{
+        cursor: pointer;
+        color: white;
+        background-color: #E58F0E;
+      }
+    }
+
+    .logo{
+      width: 250px;
+    }
+    .socialMedias{
+      width: 200px;
+      text-align: right;
+      a{
+        margin: 0 15px;
+      }
+      img{
+        width: 27px;
+      }
+    }
+  }
+  .slogan{
+    font-size: 16px;
+    line-height: 16px;
+    color: #FEBF33;
+    text-align: center;
+  }
+  .buttonGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .whitepaper{
+    //display: block;
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #E58F0E;
+    background-color: #C6660D;
+    padding: 5px 0;
+    box-shadow: 0 3px #FEBF33;
+    color: white;
+    a{
+      color: white;
+    }
+
+    &:hover{
+      cursor: pointer;
+    }
+    &:active {
+      background-color: #FEBF33;
+      box-shadow: 0 3px rgba(155, 114, 104, 0.78);
+      transform: translateY(2px);
+    }
+  }
+  .mainContent{
+    width: 800px;
+    max-width: 100%;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    .box{
+      width: calc(50% - 10px);
+    }
+    .leftBox{
+      padding: 20px;
+      background: #E58F0E;
+      border-radius: 20px;
+    }
+    .rightBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .dataRow{
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin: 5px 0;
+      color: #49221A;
+      font-size: 18px;
+      line-height: 35px;
+      .name{
+
+      }
+      .value{
+        font-weight: 600;
+        font-size: 22px;
+        color: #072a38;
+      }
+
+    }
+
+    .ant-input-affix-wrapper {
+      height: 55px;
+      margin: 0;
+      position: relative;
+      border: 2px solid #731C00;
+      box-shadow: none;
+      backdrop-filter: blur(20px);
+      box-sizing: border-box;
+      border-radius: 40px;
+      background: #C6660D;
+      .ant-input-suffix,
+      .ant-input-prefix {
+        color: #072a38;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+        span {
+          color: #072a38;
+        }
+      }
+      .suffix {
+        padding-right: 10px;
+      }
+
+      .ant-input {
+        border: none;
+        color: #072a38;
+        background: transparent;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 55px;
+        text-align: center;
+        padding-left: 25px;
+      }
+
+      .ant-input:hover {
+        border: none !important;
+      }
+      .ant-input:focus {
+        border: none !important;
+        outline: 0;
+        box-shadow: none !important;
+      }
+    }
+
+    .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+      border-color: #731C00 !important;
+      border-right-width: 2px;
+    }
+
+    .ant-input-affix-wrapper-focused {
+      outline: 0;
+      border: 2px solid #731C00 !important;
+      box-shadow: none !important;
+    }
+
+    .buyButton{
+      border: 2px solid #731C00;
+      border-radius: 30px;
+      color: #731C00;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 42px;
+      padding: 5px 0;
+      text-align: center;
+      margin-top: 10px;
+
+      &:hover{
+        cursor: pointer;
+        border: 2px solid #072a38;
+        color: #072a38;
+      }
+    }
+
+    .actionWrapper{
+      margin-top: 30px;
+      border-top: 1px dashed #731C00;
+      padding-top: 10px;
+
+      .actionButtons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+          width: calc(50% - 10px);
+          text-align: center;
+          border: 2px solid #731C00;
+          color: #731C00;
+          font-weight: bold;
+          font-size: 16px;
+          padding: 8px 0;
+          border-radius: 30px;
+          &:hover{
+            cursor: pointer;
+            border: 2px solid #072a38;
+            color: #072a38;
+          }
+        }
+      }
+    }
+
+    .contractInfo{
+      background: #C6660D;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      img{
+        width: 25%;
+      }
+
+      .data{
+        width: 65%;
+
+        h1{
+          color:#49221A;
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .dataRow{
+          font-size: 17px;
+        }
+      }
+
+    }
+
+    .referral{
+      background: #401B0B;
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 20px;
+      h1{
+        color:#E58F0E;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      p{
+        color:#FEBF33;
+      }
+      .refWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .referralLink{
+          border: 2px solid #E58F0E;
+          box-sizing: border-box;
+          border-radius: 40px;
+          padding: 5px 20px;
+          color: #E58F0E;
+          flex-grow: 2;
+          text-align: center;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 70%;
+        }
+        .copyButton{
+          border: 2px solid #E58F0E;
+          box-sizing: border-box;
+          border-radius: 40px;
+          padding: 5px 20px;
+          color: #E58F0E;
+
+          &:hover{
+            cursor: pointer;
+            border: 2px solid #072a38;
+            color: #072a38;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 765px){
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 20px 0 0 0;
+      margin-bottom: 30px;
+      .walletWrapper{
+        margin-left: auto;
+        width: 150px;
+        font-size: 15px;
+        padding: 5px 0;
+      }
+
+      .logo{
+        width: 200px;
+        margin: 0 auto;
+      }
+      .socialMedias{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        a{
+          margin: 0 20px;
+        }
+        img{
+          width: 30px;
+        }
+      }
+    }
+    .slogan{
+      line-height: 20px;
+    }
+    .buttonGroup{
+      display: flex;
+      flex-direction: column;
+    }
+    .mainContent{
+      margin: 30px auto 0 auto;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      .box{
+        width: calc(100% - 20px);
+      }
+
+      .referral{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.blink_me {
+  animation: blinker 2s linear 1;
+}
+
+@keyframes blinker {
+  50% { color: white; transform: scale(1.1) }
+}

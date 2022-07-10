@@ -1,0 +1,46 @@
+.wallet {
+  padding: 30px 20px;
+  h1 {
+    color: white;
+    font-size: 20px;
+  }
+
+  .walletItem {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border: 1px solid #E58F0E;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .hoveredWalletItemBg {
+      display: none;
+    }
+    .walletImage {
+      width: 30px;
+      margin-right: 10px;
+    }
+    h2 {
+      color: white;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #FEBF33;
+      background-color: #3d1407;
+      border: 1px solid #731C00;
+
+      .hoveredWalletItemBg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+      }
+    }
+  }
+}
