@@ -5,6 +5,7 @@ import MyRoutes from "./routes";
 import {Utils, NETWORK_ID} from './utils/utils';
 import {addNetwork} from './utils/chainsConfig';
 
+
 import './App.scss';
 
 class App extends Component {
